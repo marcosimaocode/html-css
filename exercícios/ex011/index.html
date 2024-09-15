@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tentar abrir em vários dispositivos diferentes, ou fazer zoom no navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagensaulas/pteste.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagensaulas/mteste.png" type="image/png">
+        <img src="imagensaulas/gteste.png" alt="Imagem grande">
+                
+        <!--tem que estar dentro da tag <picture> 
+            tem que estar por ordem crescente-->
+            <!--tenho que dizer qual é a outra opção com <source media="(max-width: meter os px que quero de max, neste caso, também pode ser min mas tem que ser inverso)" srcset="escrever manualmente onde está a img que vai substituir" type="image/png para tipos png, mudar consuante o tipo de img">-->
+                    
+    </picture>
+    <h1>Reproduzir audio</h1>
+    <p>Vamos aprender a Reproduzir audio.</p>
+    
+    <p>Outra opção para audio.</p>
+    <audio preload="auto" autoplay controls loop>
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg"><!--são 3 tipos audio-->
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+       
+    </audio>
+ <p>Não está a dar. Fazer <a href="midia/guanacast-33.mp3" download="guanacast-33.mp3">Download</a>.</p>
+
+ 
+
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhar com links</title>
+</head>
+<body>
+    <h1>Usar links externos</h1>
+    <p>Posso usar o <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório do GitHub</a></p>   <!--para a página ser aberta num novo separador tenho que meter target="_blank" rel="external" dentro da tag <a>, no fim-->  
+    <p>Também conseguiso ir para o <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">canal dele do youtube</a></p>
+    <h1>Usar links internos</h1>
+    <p>Se quero ir para a <a href="pag002.html" rel="next" target="_self">segunda página.</a></p> <!--para dizer ao navegador qual é a ordem uso isto rel="next"-->
+    <!--target="_self" quando são páginas do meu site-->
+    <h1>Links para download</h1>
+        <ul>
+            <li><a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf">aula 10</a></li>
+            <li><a href="livro/11 - Imagens dinâmicas, áudios e vídeos .zip" download="livro/11 - Imagens dinâmicas, áudios e vídeos .zip" type="application/zip">aula 11</a></li>
+            <li><a href="livro/12 - Trabalhando com estilos.rar" download="12 - Trabalhando com estilos.rar" type="application/vnd.rar">aula 12</a></li>
+            <li><a href="livro/13 - Cores.rar" download="13 - Cores.rar" type="application/vnd.rar">aula 13</a></li>
+
+                <!--dentro do <h1> tenho uma lista não ordenada <ul> <li> a aula 10 está com wrap de <a> para ir para outro link, neste caso, como é um download, tenho que escrever dentro da tag <a> no final, download="e meter o nome do ficheiro que é para fazer download. Depois tenho que escrever type="e ir ao cite da iana ver qual é o type para o tipo de ficheiro que tenho" -->
+
+        </ul>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <h1>Vamos colococar videos host local</h1>
+    <p>Video de host local</p>
+   <!-- se for simples assim <video src="midia/meu-video.mkv" width="500" controls></video> -->
+    <!--como quero que rode em todos os navegadores, tem que ser complexo-->
+    <video loop controls width="500" poster="imagens/babygroot.jpg">      <!--controls tem que ser dentro da primeira tag // poster="meter thumbnail" --> 
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.mkv" type="video/mvk">   <!--falta o m4v que tem type mp4, e o .ogv que tem type ogg-->
+        <source src="midia/meu-video.webm" type="video/webm">
+        <p>Não compatível com reprodução de videos</p> <!-- ele vai por ordem, se não der o 1 vai para o 2.... se não der nenhum, aparece o <p> que está dentro da tag <video>-->
+
+    </video>
+
+
+    <h1>Vamos colococar videos host externo</h1>
+    <p>Video de host externo</p> <!--youtube -> escolher video -> partilhar -> incorporar ->copiar e colar no html // posso usar vimeo. Tem na aula incorporação de videos no 1-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2q1EwcuZxdY?si=z5qfHfWIeKWHT9cz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+</body>
+</html>

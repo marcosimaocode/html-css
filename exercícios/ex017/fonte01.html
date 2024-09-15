@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /*usar sempre 3 fonts, com safe combination*/
+
+
+            /*medidas absolutas
+            cm, mm, in, px, pt, pc              px e em são as melhores
+                                                usar em!!!
+            medidas relativas
+            em (altura relativa ao tamanho natural da fonte), ex (altura relativa ao tamanho do x minusculo), rem, vw (relativo a largura da janela), vh (relativo a altura da janela), %
+            */
+            font-size: 1em; /*16px é o mais normal = 1em*/
+        }
+
+        h1 {
+            /*
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 2em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                 Nesta ordem para fazer shorthand !!!!
+             */
+            
+             font: italic bolder 2em 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhar com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est numquam molestiae temporibus vitae perspiciatis accusantium quae? Beatae laborum voluptas quaerat unde nobis, vel a nam itaque doloribus, ut, officia sequi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quia neque tenetur officiis accusamus nulla sapiente quidem aperiam est adipisci dolorem, consectetur suscipit consequatur minima molestiae eos! Eaque, hic maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quae magni officia doloribus voluptas omnis totam minus? Optio minus blanditiis nihil, odio exercitationem ab, harum eaque repellat eos modi repudiandae.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quia neque tenetur officiis accusamus nulla sapiente quidem aperiam est adipisci dolorem, consectetur suscipit consequatur minima molestiae eos! Eaque, hic maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quae magni officia doloribus voluptas omnis totam minus? Optio minus blanditiis nihil, odio exercitationem ab, harum eaque repellat eos modi repudiandae.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quia neque tenetur officiis accusamus nulla sapiente quidem aperiam est adipisci dolorem, consectetur suscipit consequatur minima molestiae eos! Eaque, hic maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quae magni officia doloribus voluptas omnis totam minus? Optio minus blanditiis nihil, odio exercitationem ab, harum eaque repellat eos modi repudiandae.</p>
+    
+</body>
+</html>

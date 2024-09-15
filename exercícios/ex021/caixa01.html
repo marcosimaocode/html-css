@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            background-color: cadetblue;
+            height: 300px;
+            width: 300px;
+
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(35, 49, 49);
+            
+            padding-right: 10px;
+            padding-left:  10px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            
+            margin-right: 10px;
+            margin-left:  10px;
+            margin-bottom: 40px;
+            margin-top: 10px;
+
+            margin: auto; meter caixas no meio
+
+            outline-width: 9px;
+            outline-style: dashed;
+            outline-color: blueviolet; */
+
+
+            /*usando shorthands  largura, estilo, cor*/
+
+            border: 10 solid rgb(35, 49, 49);
+
+            /*usando topo direita, baixo, esquerda ou , se forem iguais, meter só o valor 1 vez
+            se meter 2 valores, é para cima-baixo e esquerda-direita*/
+            padding:10px 15px 20px 25px ;
+            margin: 5px 10px 15px 20px;
+            outline:dotted 7px red  ;
+
+
+            
+        }
+        a{   /*inline level, mas posso usar o display para alterar*/
+            display: block;   /*inline block tem caracteristicas dos dois*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de caixas box-level</h1>
+    <p>Parágrafos são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como isso funciona.</p>
+    
+</body>
+</html>

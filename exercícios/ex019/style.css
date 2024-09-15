@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(199, 224, 216);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    color: rgb(0, 0, 68);
+}
+
+h2{
+    color: #550000;
+}
+
+h1#principal{                       /*em HTML é id = CSS é #
+                                      em HTML é class = CSS é.*/
+    font-size: 3em;
+    text-align: center;
+}
+
+h2.medio{
+    background-color: blueviolet;
+}
+
+h2.avançado{
+    background-color: #c09696;
+}
+
+h2.basico{
+    background-color: #f3ebeb;
+}
+
+.multiplascoisas{
+    font-style: italic;
+}
+
+
+
+
+
+
+
+

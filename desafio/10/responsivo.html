@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        main {
+            background-color: antiquewhite;
+            padding: 20px;
+            border-radius: 10px;
+
+
+            min-width: 320px;       /*320px por causa dos telemóveis mais antigos ex: iphone5*/
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1> testando responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatum suscipit nihil deserunt. Expedita, rem rerum eius quas vero alias et ipsum, minus at deserunt veritatis dolores laudantium accusamus nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, assumenda! Veritatis totam eveniet cupiditate, ut, esse eligendi corrupti, necessitatibus ipsa consectetur animi sequi. Alias, numquam. Consequuntur obcaecati temporibus fuga commodi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis officiis explicabo tempore deleniti quod, ratione quisquam, hic reiciendis, enim magnam voluptas delectus. Dignissimos exercitationem pariatur nisi voluptates accusantium accusamus molestiae!</p>
+        <picture>
+            <source media="(max-width: 800px )" srcset="10/imagens/irina-blok-pq.jpg">                          
+            <img src="10/imagens/irina-blok.jpg" alt="irina-blok"></picture>        <!-- estou a dizer para usar a img pequena de 1px a 800px-->
+    
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aperiam, iste consectetur, rerum consequatur laudantium error, harum tempora rem reprehenderit repudiandae tempore voluptatem ab veniam nobis? Dolor vitae tempora libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eveniet. Dolore ratione sint est rem corrupti minima magnam, asperiores alias quibusdam soluta voluptatibus aut impedit. Eos quaerat iste laborum sed. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit praesentium laudantium voluptate eos, culpa ad et, architecto eligendi impedit, explicabo repellat ipsa ipsam illo nisi sit veritatis nesciunt magni sapiente?
+        </p>
+        
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption {
+            font-size: 1.5em;
+            background-color: rgba(128, 128, 128, 0.575);
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        table { 
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+
+        thead, tfoot {
+            background-color: rgb(68, 68, 68);
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top:-1px;                      /*para manter o topo quando rolamos*/
+            background-color: rgb(68, 68, 68);
+
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(212, 212, 212);
+
+        }                                       /*posso usar 2n/2n-1 e odd/even */
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(248, 187, 187);
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        th.semlinha {
+            border: none;
+        }
+
+        th#estado {
+            border-radius: 0px 0px 0px 5px;
+            
+        }
+        th#população {
+            border-radius: 0px 0px 5px 0px;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+    Anatomia para tabelas grandes
+
+        caption 
+        thead
+                tr, td, th
+        tbody  
+                tr, td, th
+        tfoot
+                tr, td, th -->
+
+
+                
+
+                <table>
+                    <caption>
+                        Populaçãodas unidades Federativas
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col" class="semlinha" id="estado">Estado</th>         
+                            <!-- para fazer sentido para o vscode e Google, uso o scope="col" para o que vai ter os dados em coluna, e scope="row" para o que vai ter os dados em linha-->
+
+                            <th scope="col" style="width: 50px;" class="semlinha" id="população">População</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>São Paulo</td>
+                            <td class="num">45 973 190</td>
+                        </tr>
+                        <tr>
+                            <td>Minas Gerais</td>
+                            <td class="num">21 322 692</td>
+                        </tr>
+                        <tr>
+                            <td>Rio de Janeiro</td>
+                            <td class="num">17 219 679</td>
+                        </tr> <tr>
+                            <td>Bahia</td>
+                            <td class="num">14 850 513</td>
+                        </tr>
+                        <tr>
+                            <td>Paraná</td>
+                            <td class="num">11 824 665</td>
+                        </tr>
+                        <tr>
+                            <td>Rio Grande do Sul</td>
+                            <td class="num">11 229 915</td>
+                        </tr> <tr>
+                            <td>Pernambuco</td>
+                            <td class="num">9 539 029</td>
+                        </tr>
+                        <tr>
+                            <td>Ceará</td>
+                            <td class="num">9 233 656</td>
+                        </tr>
+                        <tr>
+                            <td>Pará</td>
+                            <td class="num">8 664 306</td>
+                        </tr>
+                        <tr>
+                            <td>São Paulo</td>
+                            <td class="num">45 973 190</td>
+                        </tr>
+                        <tr>
+                            <td>Minas Gerais</td>
+                            <td class="num">21 322 692</td>
+                        </tr>
+                        <tr>
+                            <td>Rio de Janeiro</td>
+                            <td class="num">17 219 679</td>
+                        </tr> <tr>
+                            <td>Bahia</td>
+                            <td class="num">14 850 513</td>
+                        </tr>
+                        <tr>
+                            <td>Paraná</td>
+                            <td class="num">11 824 665</td>
+                        </tr>
+                        <tr>
+                            <td>Rio Grande do Sul</td>
+                            <td class="num">11 229 915</td>
+                        </tr> <tr>
+                            <td>Pernambuco</td>
+                            <td class="num">9 539 029</td>
+                        </tr>
+                        <tr>
+                            <td>Ceará</td>
+                            <td class="num">9 233 656</td>
+                        </tr>
+                        <tr>
+                            <td>Pará</td>
+                            <td class="num">8 664 306</td>
+                        </tr><tr>
+                            <td>São Paulo</td>
+                            <td class="num">45 973 190</td>
+                        </tr>
+                        <tr>
+                            <td>Minas Gerais</td>
+                            <td class="num">21 322 692</td>
+                        </tr>
+                        <tr>
+                            <td>Rio de Janeiro</td>
+                            <td class="num">17 219 679</td>
+                        </tr> <tr>
+                            <td>Bahia</td>
+                            <td class="num">14 850 513</td>
+                        </tr>
+                        <tr>
+                            <td>Paraná</td>
+                            <td class="num">11 824 665</td>
+                        </tr>
+                        <tr>
+                            <td>Rio Grande do Sul</td>
+                            <td class="num">11 229 915</td>
+                        </tr> <tr>
+                            <td>Pernambuco</td>
+                            <td class="num">9 539 029</td>
+                        </tr>
+                        <tr>
+                            <td>Ceará</td>
+                            <td class="num">9 233 656</td>
+                        </tr>
+                        <tr>
+                            <td>Pará</td>
+                            <td class="num">8 664 306</td>
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot>
+                        <th scope="row">Total habitantes</th>
+                        <td class="num"><strong>123456</strong></td>
+
+                    </tfoot>
+
+                </table>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus vel itaque, sequi facilis eveniet rem vero sed error repellendus commodi unde debitis ad nemo voluptate dignissimos omnis, quaerat illo nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, deleniti animi! Inventore distinctio temporibus alias, iusto pariatur enim quia, dignissimos nam laborum illo dolores dolorem maiores repellendus ab nesciunt a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, provident dignissimos rem veritatis corporis eaque ipsam vitae? Non, in id quia laborum nisi sapiente cum assumenda architecto eligendi, temporibus veniam?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus vel itaque, sequi facilis eveniet rem vero sed error repellendus commodi unde debitis ad nemo voluptate dignissimos omnis, quaerat illo nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, deleniti animi! Inventore distinctio temporibus alias, iusto pariatur enim quia, dignissimos nam laborum illo dolores dolorem maiores repellendus ab nesciunt a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, provident dignissimos rem veritatis corporis eaque ipsam vitae? Non, in id quia laborum nisi sapiente cum assumenda architecto eligendi, temporibus veniam?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus vel itaque, sequi facilis eveniet rem vero sed error repellendus commodi unde debitis ad nemo voluptate dignissimos omnis, quaerat illo nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, deleniti animi! Inventore distinctio temporibus alias, iusto pariatur enim quia, dignissimos nam laborum illo dolores dolorem maiores repellendus ab nesciunt a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, provident dignissimos rem veritatis corporis eaque ipsam vitae? Non, in id quia laborum nisi sapiente cum assumenda architecto eligendi, temporibus veniam?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus vel itaque, sequi facilis eveniet rem vero sed error repellendus commodi unde debitis ad nemo voluptate dignissimos omnis, quaerat illo nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, deleniti animi! Inventore distinctio temporibus alias, iusto pariatur enim quia, dignissimos nam laborum illo dolores dolorem maiores repellendus ab nesciunt a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, provident dignissimos rem veritatis corporis eaque ipsam vitae? Non, in id quia laborum nisi sapiente cum assumenda architecto eligendi, temporibus veniam?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus vel itaque, sequi facilis eveniet rem vero sed error repellendus commodi unde debitis ad nemo voluptate dignissimos omnis, quaerat illo nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, deleniti animi! Inventore distinctio temporibus alias, iusto pariatur enim quia, dignissimos nam laborum illo dolores dolorem maiores repellendus ab nesciunt a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, provident dignissimos rem veritatis corporis eaque ipsam vitae? Non, in id quia laborum nisi sapiente cum assumenda architecto eligendi, temporibus veniam?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus vel itaque, sequi facilis eveniet rem vero sed error repellendus commodi unde debitis ad nemo voluptate dignissimos omnis, quaerat illo nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, deleniti animi! Inventore distinctio temporibus alias, iusto pariatur enim quia, dignissimos nam laborum illo dolores dolorem maiores repellendus ab nesciunt a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, provident dignissimos rem veritatis corporis eaque ipsam vitae? Non, in id quia laborum nisi sapiente cum assumenda architecto eligendi, temporibus veniam?</p>
+</body>
+</html>

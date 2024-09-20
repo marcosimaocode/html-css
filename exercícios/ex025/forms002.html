@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="off"></form>
+    <p> 
+        <label for="iusu">Usuário:</label>
+        <input type="text" name="usu" id="iusu" required minlength="5" max="20" placeholder="Nome do Usuário" autocomplete="username">
+    </p>                                                            
+    <!--se meter required, só aceita se estiver preenchido//
+    posso também escolher pela quantidade de caractéres//
+    O size é para quantas letras mostra, cria rolagem lateral//
+    Placeholder é para aparecer algo escrito na caixa antes de se escrever//
+    Dentro do input devo meter também que tipo de autocomplete quero para o brwoser saber o que é e tal//
+
+    -->
+    <p>
+        <label for="ipass">Password:</label>
+        <input type="password" name="pass" id="ipass" required minlength="5" maxlength="25" placeholder="Min. 8 Letras" autocomplete="current-password">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p> 
+  
+    
+</body>
+</html>

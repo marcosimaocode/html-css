@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">    <!--com method get aparece o que escrevi no url, mas com method post, não// get para nada do que é privado e que seja partilhavel e para post o que é privado -->       
+
+
+        <!-- aprender https para max de segurança !!!!!!-->
+
+
+
+        <p>
+            <label for="inome">Nome:</label> 
+
+            <input type="text" name="nome" id="inome">
+        </p>
+
+
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>    
+
+
+
+            <!--    Crio o form, meto dentro da action o script que vai receber os dados todos que estão dentro do form, autocomplete=off para não aparecer sugestões escritas antes, meter um <p> com o que quero fora da caixa, crio o input dentro do <p> depois ou antes do que escrevi antes//
+                    O input tem types diferentes, convem criar com name e id//
+                    No caso do botão, o input e submit e escrevo dentro do value o que quero que o botão diga//
+                    Label serve para relacionar com o que tem o id, por exemplo, meti ni id do nome 'inome' (começa com i para diferenciar com o name), então dentro do for da label, tenho que escrever inome. Útil para telemovel-->
+
+
+
+    </form>
+</body>
+</html>

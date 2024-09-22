@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <h1>Exemplos de Formularios</h1>
+    
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#00ff00"> <!--para começar já numa cor-->
+        </p>
+
+        <p>
+            <label for="irange">Quanto estou farto disto:</label>
+            <input type="range" name="range" id="irange" min="1" max="10" value="1">  <!--para ter um min e max, dentro do input meto min e max com o valor que quero, não esquecer que pode ficar menos suave a transição-->
+
+        </p>
+
+        <form action="cadastro.php" method="post">  <!--para o input de ficheiros tenho que usar o method="post"-->
+            <p>
+                <label for="ifoto">Foto perfil:</label>
+                <input type="file" name="foto" id="ifoto">
+            
+            </p>
+        </form>
+
+        <p>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+
+        </p>
+
+
+
+
+    </form>
+    
+</body>
+</html>

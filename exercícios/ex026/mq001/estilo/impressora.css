@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*estilo para impressora*/
+
+
+* {
+    margin: 10px;
+    padding: 10px;
+
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+
+menu {
+    display: none;
+}                        /* para não aparecer o menu, porque não faz sentido, quando for impresso*/
+
+
+article {
+    width: 100%;
+}
+
+
+article::after {
+    content: 'Esse artigo foi impresso como teste.';    /* consigo adicionar txt a partir do css com content:'escrevo aqui'*/
+    font-size: 0.5em;
+}

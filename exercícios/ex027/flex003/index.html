@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex boxes</title>
+    <style>
+        div.conteiner {
+            background-color: lightblue;
+            display: flex; 
+            flex-flow: row wrap; 
+        }
+
+        div.item {
+            background-color: darkgray;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            flex: auto;
+          
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo Flex Box</h1>
+    
+        <div class="conteiner">
+            
+            <div class="item">Exemplo de bloco A</div>
+            <div class="item">Exemplo de bloco B</div>
+            <div class="item">Exemplo de bloco C</div>
+            <div class="item">Exemplo de bloco D</div>
+            <div class="item">Exemplo de bloco E</div>
+            <div class="item">Exemplo de bloco F</div>
+            <div class="item">Exemplo de bloco G</div>
+
+
+
+
+
+
+
+        </div>
+    
+</body>
+</html>
+
+<!--
+
+
+configurações do conteiner:
+
+
+flex-direction: row; (predefinida, da esq. para a dir.)
+
+flex-direection: row-reverse; (da dir. para a esq.)
+
+flex-direction: column; (de cima para baixo)
+
+flex-direction: column-reverse; (de baixo para cima)
+
+
+
+ROW:
+
+main-axis = horizontal 
+( vai do main-start (esquerda cima) até o main-end ( direita cima))
+
+cross-axis = vertical
+(vai do cross-start (esquerda cima) até o cross-end (esquerda baixo))
+
+atenção que podem alterar os starts e ends (para o oposto) se meter em reverse 
+
+
+
+COLUMN:
+
+main-axis = vertical 
+
+cross-axis = horizontal
+
+
+
+-->

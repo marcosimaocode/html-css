@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex boxes</title>
+    <style>
+        div.conteiner {
+            background-color: lightblue;
+            display: flex;      /*tem que ter isto no conteiner/pai , e flex: auto; no filho*/
+        }
+
+        div.item {
+            background-color: darkgray;
+            border: 1px solid black;
+            flex: auto;                     /*automaticamente ocupa 100% do espaço do conteiner*/
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo Flex Box</h1>
+    
+        <div class="conteiner">
+            
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+
+
+
+
+
+
+
+        </div>
+    
+</body>
+</html>
+
+<!--
+
+
+CONFIGURAÇÕES DO CONTEINER:
+
+
+flex-direction: row; (predefinida, da esq. para a dir.)
+
+flex-direection: row-reverse; (da dir. para a esq.)
+
+flex-direction: column; (de cima para baixo)
+
+flex-direction: column-reverse; (de baixo para cima)
+
+
+
+ROW:
+
+main-axis = horizontal 
+( vai do main-start (esquerda cima) até o main-end ( direita cima))
+
+cross-axis = vertical
+(vai do cross-start (esquerda cima) até o cross-end (esquerda baixo))
+
+atenção que podem alterar os starts e ends (para o oposto) se meter em reverse 
+
+
+
+COLUMN:
+
+main-axis = vertical 
+
+cross-axis = horizontal
+
+
+
+FLEX-WRAP:
+
+flex-wrap:nowrap; (perdefinição, esmaga a caixa que tem conteudo)
+
+
+flex-wrap: wrap; (se diminuir o tamanho, e se não couber, ele mexe se no sentido do cross-axis)  
+
+ex:HHH
+   H
+
+
+flex-wrap: wrap-reverse; (se diminuir o tamanho, e se não couber, ele mexe se no sentido oposto do cross-axis) 
+
+ex:H
+   HHH
+
+
+
+SHORTHAND:
+
+flex-flow: row wrap; (direction + wrap)
+
+
+
+JUSTIFY-CONTENT:
+
+vai alinhar o conteudo segundo o main-axis
+
+
+justify-content: flex-start; (vai alinhar no main-start)
+
+justify-content: flex-end; (vai alinhar no main-end)
+
+justify-content: center; (vai alinhar no meio)
+
+justify-content: space-between; (vai alinhar o primeiro item no main-start e o ultimo item no main-end, e todos os outros com o mesmo espaço entre eles)
+
+justify-content: space-evenly; (vai alinhar todos os itens com o mesmo espaço entre eles, inclusive nas pontas (main-start e main-end))
+
+justify-content: space-around; (vai alinhar todos os itens com o mesmo espaço entre eles, inclusive nas pontas (main-start e main-end), mas cada um tem uma especie de bolha á sua volta)
+
+
+
+
+ALIGN-ITEMS:
+
+vai alinhar o conteudo segundo o cross-axis
+
+
+align-items: stretch; (predefinição, estica o conteudo)
+
+align-items: flex-start; (vai iniciar no cross-start sem esticar)
+
+align-items: flex-end; (vai iniciar no cross-end sem esticar)
+
+align-items: center; (vai iniciar no centro sem esticar)
+
+
+
+-->

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+/* breakpoints normais para dispositivos        width
+
+Ecrãs pequenos: até 600px
+Telemóvel: de 600px a 768px
+Tablet: de 768px a 992px
+PC: de 992px a 1200px
+TV: + de 1200px
+
+
+*/
+
+
+@media screen and (min-width: 768px) {
+    span#barramenu {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+    
+    menu > ul > li {
+        display: inline-block;
+        
+    }
+
+    main {
+        width: 730px;
+    }
+}
+
+

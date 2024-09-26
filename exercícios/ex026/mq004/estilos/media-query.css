@@ -3,7 +3,135 @@
 
 /*todas as restantes medias*/
 
+/* breakpoints normais para dispositivos
 
+Ecrãs pequenos: até 600px
+Telemóvel: de 600px a 768px
+Tablet: de 768px a 992px
+PC: de 992px a 1200px
+TV: + de 1200px
+
+
+*/
+
+
+/*  teria que colocar isto, mas como já fiz com mobile 1st, isto já está definido, só preciso de fazer os outros tamanhos
+
+
+
+
+@media screen and (max-width: 600px) {
+    
+}
+
+
+@media screen and (min-width: 601px) and (max-width:768px) {
+    
+}   */
+
+
+/*impressoras*/
 @media print {
+
+    * {
+        font-family: 'Courier New', Courier, monospace; /*próprio para impressoras*/
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /*não há background para impressoras*/ 
+        
+    }
+
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi de teste';
+        text-decoration: overline;
+
+        }
+
+    img#phone {display: none;}
+
+    img#tablet {display: none;}
+
+    img#print {display: block;}
+
+    img#pc {display: none;}
+
+    img#tv {display: none;}
+
+    
+}
+
+
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+        
+
+    }
+
+    img#phone {display: none;}
+
+    img#tablet {display: block;}
+
+    img#print {display: none;}
+
+    img#pc {display: none;}
+
+    img#tv {display: none;}
+
+    
+}
+
+
+/*PC*/
+@media screen and (min-width: 993px) and (max-width: 1200px){
+   body {
+    background-image: url(../imagens/back-pc.jpg);
+   }
+    
+    img#phone {display: none;}
+
+    img#tablet {display: none;}
+
+    img#print {display: none;}
+
+    img#pc {display: block;}
+
+    img#tv {display: none;}
+    
+}
+
+
+/*TV*/
+@media screen and (min-width: 1201px){
+
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#phone {display: none;}
+
+    img#tablet {display: none;}
+
+    img#print {display: none;}
+
+    img#pc {display: none;}
+
+    img#tv {display: block;}
     
 }

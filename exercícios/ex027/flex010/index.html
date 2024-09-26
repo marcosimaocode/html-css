@@ -7,36 +7,29 @@
     <style>
         div.conteiner {
             background-color: lightblue;
-            display: flex;   
-            flex-flow: row wrap;
-            align-content: space-around;
-            height: 400px;  
+            display: flex; 
+            flex-flow: row nowrap;      
         }
+
         div.item {
             background-color: darkgray;
-            border: 1px solid black;           
+            border: 1px solid black;                    
             text-align: center;
-            padding: 40px;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 1;
         }
     </style>
 </head>
 <body>
-    <h1>Aprendendo FlexBox</h1>
+    <h1>Aprendendo Flex Box</h1>
     
         <div class="conteiner">
             
             <div class="item">A</div>
             <div class="item">B</div>
             <div class="item">C</div>
-            <div class="item">D</div>
-            <div class="item">E</div>
-            <div class="item">F</div>
-            <div class="item">G</div>
-            <div class="item">H</div>
-            <div class="item">I</div>
-            <div class="item">K</div>
-            <div class="item">L</div>
-
+          
 
 
 
@@ -47,3 +40,4 @@
     
 </body>
 </html>
+

@@ -155,4 +155,67 @@ align-content: space-between; (vai alinhar o primeiro item no cross-start e o ul
 align-content: space-evenly; (vai alinhar todos os itens com o mesmo espaço entre eles, inclusive nas pontas (cross-start e cross-end) com várias linhas na mesma)
 
 align-content: space-around; (vai alinhar todos os itens com o mesmo espaço entre eles, inclusive nas pontas (cross-start e cross-end), mas cada um tem uma especie de bolha á sua volta com várias linhas na mesma)
+
+
+
+ALIGN-SELF:  
+
+para alinhar cada item de uma maneira
+
+align-self: auto; (vai alinhar no cross-axis, conforme o conteiner sem esticar)
+
+align-self: flex-start; (vai alinhar no cross-axis, no cross-start sem esticar)
+
+align-self: flex-end; (vai alinhar no cross-axis, no cross-end sem esticar)
+
+align-self: center; (vai alinhar no cross-axis, no cross-center sem esticar)
+
+align-self: stretch; (vai alinhar no cross-axis, esticando)
+
+
+
+FLEX-SHRIK e FLEX-GROW
+
+usar em nowrap
+
+flex-shrink: 1; (predefinido, qualquer numero positivo dá o ok para encolher, e 0 não dá o ok para encolher)
+
+flex-grow: 0; (predefinido, qualquer numero positivo dá o ok para crecer, e 0 não dá o ok para crecer)
+
+flex-grow: 2; (vai crescer 2x mais do que o que tem 1 (sempre com porporção), posso usar vários números)
+
+flex-shrink: 3; (vai encolher 3x mais do que o que tem 1 (sempre com porporção), posso usar vários números)
+
+
+
+FLEX-BASIS
+
+usa-se para definir o tamanho dos itens
+
+
+flex-basis: auto; (predefinição)
+flex-basis: 100px;
+
+
+FLEX (SHORTHAND) 
+
+usa-se no filho
+
+flex: 0 1 100px; (tem grow, shrink e basis)
+
+flex: 0 1 auto;  == flex: initial; (tudo no padrão, é a mesma coisa)
+
+flex: 0 0 auto; == flex: none; (não deixar os itens flexiveis, não cresce, nem diminui)
+
+
+flex: 1 1 auto; == flex: auto; (cresce e diminui, a unica limitação é o conteudo)
+
+flex: 5; == flex: 5 1 auto;( como é grow, shrink e basis, mas só tem 1 valor, é apenas para o grow, o resto é padrão)
+
+
+
+
+
+
+
 -->

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex boxes</title>
+    <style>
+        div.conteiner {
+            background-color: lightblue;
+            display: flex;  
+            flex-flow: row wrap;  
+            align-items: flex-start;
+            height: 400px;
+        }
+
+        div.item {
+            background-color: darkgray;
+            border: 1px solid black;                   
+            text-align: center;
+            padding: 20px;
+        }
+
+        div#i1 {
+        
+        }
+
+        div#i2 {
+            align-self: auto;
+        }
+
+        div#i3 {
+            align-self: flex-end;
+        
+        }
+
+        div#i4 {
+            align-self: center;
+            border-radius: 50%;
+        }
+
+        div#i5 {
+            
+        }
+
+        div#i6 {
+            background-color: aqua;
+        }
+
+        div#i7 {
+            align-self: stretch;
+            
+        }
+
+
+
+    </style>
+</head>
+
+  <!-- para organizar ordens, tenho que usar  style="order: 1"//
+             Fica por ordem crescente//
+             Predefinição é '0'-->
+
+<body>
+    <h1>Aprendendo Flex Box</h1>
+    
+        <div class="conteiner">
+            
+            <div class="item" id="i1">A</div>
+            <div class="item" id="i2">B</div>
+            <div class="item" id="i3">C</div>
+            <div class="item" id="i4">D</div>
+            <div class="item" id="i5">E</div>
+            <div class="item" id="i6">F</div>
+            <div class="item" id="i7">G</div>
+
+
+          
+
+
+
+        </div>
+    
+</body>
+</html>
+

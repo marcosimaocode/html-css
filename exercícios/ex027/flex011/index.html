@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex boxes</title>
+    <style>
+        div.conteiner {
+            background-color: lightblue;
+            display: flex; 
+            flex-flow: row nowrap;      
+        }
+
+        div.item {
+            background-color: darkgray;
+            border: 1px solid black;                    
+            text-align: center;
+            flex-basis: 100px;
+        
+        }
+
+        div.item#caixaa{
+            background-color: beige;
+            flex-grow: 10;
+            flex-shrink: 1;
+        }
+
+        div.item#caixab{
+            background-color: antiquewhite;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        div.item#caixac{
+            background-color: bisque;
+            flex-grow: 2;
+            flex-shrink: 1;
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <h1>Aprendendo Flex Box</h1>
+    
+        <div class="conteiner">
+            
+            <div class="item" id="caixaa">A</div>
+            <div class="item" id="caixab">B</div>
+            <div class="item" id="caixac">C</div>
+          
+
+
+
+
+
+
+        </div>
+    
+</body>
+</html>
+
